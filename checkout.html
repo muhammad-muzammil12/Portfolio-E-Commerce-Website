@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | ÉLORA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="announcement">ÉLORA — A considered shopping experience</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">ÉLORA<span>.</span></a>
+      <div class="header-actions"><a href="cart.html">Back to bag</a></div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-intro"><p class="eyebrow">ALMOST YOURS</p><h1>Checkout</h1></div>
+    <div class="checkout-layout">
+      <form id="checkout-form" class="checkout-form">
+        <h2>Delivery details</h2>
+        <div class="form-grid">
+          <label>First name<input name="firstName" required autocomplete="given-name"></label>
+          <label>Last name<input name="lastName" required autocomplete="family-name"></label>
+          <label class="full-field">Email address<input name="email" type="email" required autocomplete="email"></label>
+          <label class="full-field">Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+          <label class="full-field">Street address<input name="address" required autocomplete="street-address"></label>
+          <label>City<input name="city" required autocomplete="address-level2"></label>
+          <label>Postal code<input name="postal" autocomplete="postal-code"></label>
+        </div>
+        <h2 class="payment-heading">Payment method</h2>
+        <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked> Cash on Delivery</label>
+        <p class="small-note">This demo checkout does not process online payments or transmit orders to a store server.</p>
+        <button class="btn btn-dark btn-wide" type="submit">Place demo order</button>
+      </form>
+      <aside id="checkout-summary" class="order-summary"></aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">© 2026 ÉLORA. All rights reserved.</div></footer>
+</body>
+</html>
